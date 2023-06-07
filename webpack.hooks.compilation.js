@@ -4,6 +4,7 @@ function hooksRegister(compilation, webpack) {
     const { Compilation } = webpack
     /** RawSource 是其中一种'source'类型，用来在compilation中表示资源的源码 */
     const { RawSource } = webpack.sources
+
     compilation.hooks.buildModule.tap(useTap, (module) => {
         /** SyncHook 在模块构建开始之前触发，可以用来修改模块 */
         console.log('compilation hooks: buildModule')

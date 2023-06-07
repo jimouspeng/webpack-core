@@ -3,7 +3,7 @@
  */
 const fs = require('fs')
 const { compilationHooksRegister } = require('./webpack.hooks.compilation')
-console.log(compilationHooksRegister, '?????')
+
 const useTap = 'PlgCore'
 // const webpack = require('webpack')
 class PlgCore {
